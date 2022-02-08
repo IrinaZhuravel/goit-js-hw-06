@@ -12,7 +12,7 @@ function onBtnSubmit(event) {
 
   if (mail === "" || password === "") {
     alert("Заполнены не все поля ввода");
-    form.reset();
+//     form.reset();
     return;
   }
   const authorizationFormData = {
