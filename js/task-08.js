@@ -11,19 +11,11 @@ function onBtnSubmit(event) {
   const password = formEl.password.value;
 
   if (mail === "" || password === "") {
-    alert("Заполнены не все поля ввода");
-//     form.reset();
-    return;
+    return alert("Заполнены не все поля ввода");
   }
-  const authorizationFormData = {
-    site: location.href,
-  };
-
-  const formData = new FormData(event.currentTarget);
-  formData.forEach((value, name) => {
-    authorizationFormData[name] = value;
+  console.log({
+    mail,
+    password,
   });
-  console.log(authorizationFormData);
-
-  form.reset;
+  event.currentTarget.reset();
 }

@@ -6,6 +6,5 @@ categoriesEl.forEach(element => {
     console.log("Category: ", categoryTitleEl);
 
     const categoryCountEl = element.lastElementChild;
-    const categoryNumberEl = categoryCountEl.querySelectorAll("li");
-    console.log("Elements: ", categoryNumberEl.length);
+    console.log("Elements: ", categoryCountEl.length);
 })
